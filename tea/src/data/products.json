@@ -1,0 +1,14 @@
+[
+  {
+    "id": 0,
+    "name": "",
+    "description": "",
+    "categories": [],
+    "tags": [],
+    "prices": [{ "weight": 0, "price": 0 }],
+    "stock": [{ "weight": 0, "count": 0 }],
+    "images": [{ "alt": "", "url": "" }],
+    "measurements": [{ "weights": [], "volume": 0 }],
+    "date": { "last-updated": "" }
+  }
+]
