@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Product({ name, images, prices }) {
   let hasMultiplePrices = prices.length > 1;
@@ -21,7 +22,10 @@ function Product({ name, images, prices }) {
         alt={images[0].alt}
       />
       <div className="bgColor-snow flex-center squircle padding-vertical">
-        <div>{name}</div>
+        {/* <div>{name}</div> */}
+        <div>
+          <Route path="/d" element={name} />;
+        </div>
         <div>
           $
           {!hasMultiplePrices
