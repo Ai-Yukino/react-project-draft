@@ -18,15 +18,23 @@
       { "option": "B", "stock": 23 }
     ],
     "images": [
-      { "alt": "Taller dim sum cup", "url": "./images/1-1", "option": "A" },
-      { "alt": "Wider dim sum cup", "url": "./images/1-2", "option": "B" },
+      {
+        "alt": "Taller dim sum cup",
+        "url": "../images/1-1",
+        "option": "A"
+      },
+      {
+        "alt": "Wider dim sum cup",
+        "url": "../images/1-2",
+        "option": "B"
+      },
       {
         "alt": "Taller and wider dim sum cups - 2 cups",
-        "url": "./images/1-3"
+        "url": "../images/1-3"
       },
       {
         "alt": "Taller and wider dim sum cups - 4 cups",
-        "url": "./images/1-4"
+        "url": "../images/1-4"
       }
     ],
     "measurements": [
@@ -49,19 +57,19 @@
     "images": [
       {
         "alt": "blue and white hybrid teapot - side view",
-        "url": "./images/2-1"
+        "url": "../images/2-1"
       },
       {
         "alt": "blue and white hybrid teapot - front view",
-        "url": "./images/2-2"
+        "url": "../images/2-2"
       },
       {
         "alt": "blue and white hybrid teapot - lid off",
-        "url": "./images/2-3"
+        "url": "../images/2-3"
       },
       {
         "alt": "blue and white hybrid teapot - spout holes",
-        "url": "./images/2-4"
+        "url": "../images/2-4"
       }
     ],
     "measurements": [{ "option": "default", "volume": 180 }],
@@ -77,8 +85,14 @@
     "prices": [{ "option": "default", "price": 2.5 }],
     "stock": [{ "option": "default", "count": 38 }],
     "images": [
-      { "alt": "glass fairness pitcher - side view", "url": "./images/3-1" },
-      { "alt": "glass fairness pitcher - front view", "url": "./images/3-2" }
+      {
+        "alt": "glass fairness pitcher - side view",
+        "url": "../images/3-1"
+      },
+      {
+        "alt": "glass fairness pitcher - front view",
+        "url": "../images/3-2"
+      }
     ],
     "measurements": [{ "option": "default", "volume": 215 }],
     "date": { "date-added": "2013-05-04T16:00:00-06:00" }
@@ -92,7 +106,7 @@
     "options": [{ "option": "default" }],
     "prices": [{ "option": "default", "price": 1.5 }],
     "stock": [{ "option": "default", "count": 12 }],
-    "images": [{ "alt": "Black teacup", "url": "./images/4-1" }],
+    "images": [{ "alt": "Black teacup", "url": "../images/4-1" }],
     "measurements": [{ "option": "default", "volume": 50 }],
     "date": { "date-added": "2020-12-14T12:30:00-06:00" }
   },
@@ -103,12 +117,18 @@
     "categories": ["teaware", "mug"],
     "tags": ["teaware", "glazed", "mug"],
     "options": [{ "option": "default" }],
-    "prices": [{ "option": "default", "price": 0 }],
-    "stock": [{ "option": "default", "count": 0 }],
+    "prices": [{ "option": "default", "price": 35 }],
+    "stock": [{ "option": "default", "count": 3 }],
     "images": [
-      { "alt": "Lotus lip-filter mug - front view", "url": "./images/5-1" },
-      { "alt": "Lotus lip-filter mug - lid off", "url": "./images/5-2" },
-      { "alt": "Lotus lip-filter mug - lip-flter", "url": "./images/5-3" }
+      {
+        "alt": "Lotus lip-filter mug - front view",
+        "url": "../images/5-1"
+      },
+      { "alt": "Lotus lip-filter mug - lid off", "url": "../images/5-2" },
+      {
+        "alt": "Lotus lip-filter mug - lip-flter",
+        "url": "../images/5-3"
+      }
     ],
     "measurements": [{ "option": "default", "volume": 280 }],
     "date": { "date-added": "2018-10-02T17:00:00-06:00" }
@@ -123,9 +143,15 @@
     "prices": [{ "option": "default", "price": 5 }],
     "stock": [{ "option": "default", "count": 56 }],
     "images": [
-      { "alt": "Porcelain gaiwan", "url": "./images/6-1" },
-      { "alt": "Porcelain gaiwan - lid balanced", "url": "./images/6-2" },
-      { "alt": "Porcelain gaiwan - pieces removed", "url": "./images/6-3" }
+      { "alt": "Porcelain gaiwan", "url": "../images/6-1" },
+      {
+        "alt": "Porcelain gaiwan - lid balanced",
+        "url": "../images/6-2"
+      },
+      {
+        "alt": "Porcelain gaiwan - pieces removed",
+        "url": "../images/6-3"
+      }
     ],
     "measurements": [{ "option": "default", "volume": 85 }],
     "date": { "date-added": "2010-05-22T05:00:00-06:00" }
@@ -142,15 +168,15 @@
     "images": [
       {
         "alt": "Single-hole porcelain teapot - side view",
-        "url": "./images/7-1"
+        "url": "../images/7-1"
       },
       {
         "alt": "Single-hole porcelain teapot - front view",
-        "url": "./images/7-2"
+        "url": "../images/7-2"
       },
       {
         "alt": "Single-hole porcelain teapot - lid off",
-        "url": "./images/7-3"
+        "url": "../images/7-3"
       }
     ],
     "measurements": [{ "option": "default", "volume": 110 }],
@@ -174,10 +200,22 @@
       { "option": "100g", "price": 1 }
     ],
     "images": [
-      { "alt": "2016 Yunnan green tea - dry leaf", "url": "./images/8-1" },
-      { "alt": "2016 Yunnan green tea - steeping", "url": "./images/8-2" },
-      { "alt": "2016 Yunnan green tea - finished brew", "url": "./images/8-3" },
-      { "alt": "2016 Yunnan green tea - wet leaf", "url": "./images/8-4" }
+      {
+        "alt": "2016 Yunnan green tea - dry leaf",
+        "url": "../images/8-1"
+      },
+      {
+        "alt": "2016 Yunnan green tea - steeping",
+        "url": "../images/8-2"
+      },
+      {
+        "alt": "2016 Yunnan green tea - finished brew",
+        "url": "../images/8-3"
+      },
+      {
+        "alt": "2016 Yunnan green tea - wet leaf",
+        "url": "../images/8-4"
+      }
     ],
     "date": { "date-added": "2018-02-15T01:00:00-06:00" }
   },
@@ -198,10 +236,10 @@
       { "option": "100g", "price": 3 }
     ],
     "images": [
-      { "alt": "Mellow Ruby 18 - dry leaf", "url": "./images/9-1" },
-      { "alt": "Mellow Ruby 18 - steeping", "url": "./images/9-2" },
-      { "alt": "Mellow Ruby 18 - finished brew", "url": "./images/9-3" },
-      { "alt": "Mellow Ruby 18 - wet leaf", "url": "./images/9-4 " }
+      { "alt": "Mellow Ruby 18 - dry leaf", "url": "images/9-1" },
+      { "alt": "Mellow Ruby 18 - steeping", "url": "../images/9-2" },
+      { "alt": "Mellow Ruby 18 - finished brew", "url": "../images/9-3" },
+      { "alt": "Mellow Ruby 18 - wet leaf", "url": "../images/9-4" }
     ],
     "date": { "date-added": "2020-07-24T14:45:00-06:00" }
   }
