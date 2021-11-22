@@ -1,30 +1,28 @@
 # react-project-draft
 
+## How to run
+
+```
+cd tea
+npm install
+vite (or npm run dev)
+```
+
 ## Current task
 
-Create JSON data
-Pick teas and teaware and fill in data as you go
+Individual product pages:
 
-### Tea
-
-### Teaware
+- Add routing to individual product pages
+  - Read [react router deep-dive](https://reactrouter.com/docs/en/v6/getting-started/concepts) to figure out nested routing, i.e product list page -> individual product pages where each individual product page is a dynamically generated route
+- Make individual product pages
 
 ## Next task
 
-Product pages: (similar to [Bitterleaf Teas](https://www.bitterleafteas.com/shop) or other static product pages)
+Nicer product display
 
-- Teaware
-- Tea
+- Edit `products.JSON` and `/images` folder to choose display image
 
-products.JSON -> convert to JSX -> display list of products
-
-Edit `products.JSON` and `/images` folder to choose display image
-
-## Design
-
-Rounded corners
-
-## Example sites
+## Design inpsiration
 
 [🔗 Bitterleaf teas](https://www.bitterleafteas.com/shop)  
 [🔗 Three bears tea](https://www.threebearstea.com/collections/teapots)
@@ -34,7 +32,8 @@ Rounded corners
 [👥 Dan Abramov's answers about async inside `useEffect()`](https://github.com/facebook/react/issues/14326)  
 [📝 React beta docs: props in child component](https://beta.reactjs.org/learn/passing-props-to-a-component#step-2-read-props-inside-the-child-component)  
 [👥 Filter list SE answer](https://stackoverflow.com/a/69270078)  
-[🔗 React router tutorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial)
+[🔗 React router tutorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial)  
+[🔗 React router deep-dive](https://reactrouter.com/docs/en/v6/getting-started/concepts)
 
 ## Requirements
 
