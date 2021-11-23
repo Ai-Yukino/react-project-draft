@@ -12,7 +12,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<App />} />
-        <Route path="/:productName" element={<ProductPage />} />
+        <Route path="/:productName" element={<ProductPage name={"test"} />} />
       </Route>
     </Routes>
   </BrowserRouter>,
