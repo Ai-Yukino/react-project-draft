@@ -14,6 +14,8 @@ Individual product pages:
 
 - Add routing to individual product pages
   - Read [react router deep-dive](https://reactrouter.com/docs/en/v6/getting-started/concepts) to figure out nested routing, i.e product list page -> individual product pages where each individual product page is a dynamically generated route
+  - Figure out how to pass props in route config
+  - Rewrite data fetching logic at `main.jsx` level
 - Make individual product pages
 
 ## Next task
@@ -34,6 +36,10 @@ Nicer product display
 [👥 Filter list SE answer](https://stackoverflow.com/a/69270078)  
 [🔗 React router tutorial](https://reactrouter.com/docs/en/v6/getting-started/tutorial)  
 [🔗 React router deep-dive](https://reactrouter.com/docs/en/v6/getting-started/concepts)
+
+- [🔗 Rendering section](https://reactrouter.com/docs/en/v6/getting-started/concepts#rendering)
+
+[📝 Replace white space inside string](https://flaviocopes.com/how-to-replace-whitespace-javascript/)
 
 ## Requirements
 

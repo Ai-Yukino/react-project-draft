@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Product({ name, images, prices }) {
   let hasMultiplePrices = prices.length > 1;
@@ -21,7 +22,11 @@ function Product({ name, images, prices }) {
         alt={images[0].alt}
       />
       <div className="bgColor-snow flex-center squircle padding-vertical">
-        <div>{name}</div>
+        {/* <div>{name}</div> */}
+        <Link to={"/" + name.replace(/\s/g, "-")}>
+          <div>{name}</div>
+        </Link>
+
         <div>
           $
           {!hasMultiplePrices
