@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Product({ name, images, prices }) {
+function Product({ name, images, prices, productURL }) {
   let hasMultiplePrices = prices.length > 1;
 
   const pricesArray = prices.map((object) => {
@@ -22,8 +22,7 @@ function Product({ name, images, prices }) {
         alt={images[0].alt}
       />
       <div className="bgColor-snow flex-center squircle padding-vertical">
-        {/* <div>{name}</div> */}
-        <Link to={"/" + name.replace(/\s/g, "-")}>
+        <Link to={productURL}>
           <div>{name}</div>
         </Link>
 
@@ -60,6 +59,7 @@ function Products() {
         name={product.name}
         images={product.images}
         prices={product.prices}
+        productURL={product.productURL}
       />
     );
   });

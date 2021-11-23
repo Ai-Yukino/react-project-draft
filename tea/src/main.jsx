@@ -10,10 +10,8 @@ import ProductPage from "./routes/ProductPage";
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />}>
-        <Route index element={<App />} />
-        <Route path="/:productName" element={<ProductPage name={"test"} />} />
-      </Route>
+      <Route path="/:productName" element={<ProductPage />} />
+      <Route path="/" element={<App />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
