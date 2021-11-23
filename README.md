@@ -15,6 +15,7 @@ Individual product pages:
 - Add routing to individual product pages
   - Read [react router deep-dive](https://reactrouter.com/docs/en/v6/getting-started/concepts) to figure out nested routing, i.e product list page -> individual product pages where each individual product page is a dynamically generated route
   - Figure out how to pass props in route config
+  - Rewrite data fetching logic at `main.jsx` level
 - Make individual product pages
 
 ## Next task
