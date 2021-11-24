@@ -39,7 +39,8 @@ Nicer product display
 
 - [🔗 Rendering section](https://reactrouter.com/docs/en/v6/getting-started/concepts#rendering)
 
-[📝 Replace white space inside string](https://flaviocopes.com/how-to-replace-whitespace-javascript/)
+[📝 Replace white space inside string](https://flaviocopes.com/how-to-replace-whitespace-javascript/)  
+[👥 Set title in react page](https://stackoverflow.com/a/46160586)
 
 ## Requirements
 
