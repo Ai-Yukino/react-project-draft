@@ -22,7 +22,12 @@ function Product({ name, images, prices, path }) {
         alt={images[0].alt}
       />
       <div className="bgColor-snow flex-center squircle padding-vertical">
-        <Link to={path}>
+        <Link
+          to={path}
+          onClick={() => {
+            document.title = "A small tea shop | " + name;
+          }}
+        >
           <div>{name}</div>
         </Link>
 

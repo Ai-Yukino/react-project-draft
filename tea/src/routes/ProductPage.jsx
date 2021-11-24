@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 import { useParams } from "react-router-dom";
 
 export default function ProductPage() {
@@ -28,7 +28,6 @@ export default function ProductPage() {
           return product.path === params.productPath;
         })
       );
-      document.title = "A small tea shop | " + product.path;
     }
 
     fetchData("./src/data/products.json");
