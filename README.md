@@ -38,7 +38,9 @@ Nicer `Products.jsx`
 
 [📝 Replace white space inside string](https://flaviocopes.com/how-to-replace-whitespace-javascript/)  
 [👥 Set title in react page](https://stackoverflow.com/a/46160586)  
-[👥 Check if object has property](https://dmitripavlutin.com/check-if-object-has-property-javascript/)
+[👥 Check if object has property](https://dmitripavlutin.com/check-if-object-has-property-javascript/)  
+[👥 Cross fading images](http://css3.bradshawenterprises.com/cfimg/)  
+[👥 Cross fade images inside flexbox](https://stackoverflow.com/a/46891338)
 
 ## Requirements
 
