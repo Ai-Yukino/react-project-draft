@@ -3,15 +3,15 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
-import App from "./App";
-// import Products from "./components/Products";
+// import App from "./App";
 import ProductPage from "./routes/ProductPage";
+import Products from "./routes/Products";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/:productPath" element={<ProductPage />} />
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<Products />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
