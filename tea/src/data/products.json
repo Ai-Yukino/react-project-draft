@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Dim sum teacups",
-    "productURL": "Dim-sum-teacups",
+    "path": "Dim-sum-teacups",
     "description": "These plain white teacups are what you might find in a dim sum restaurant. They're available in a taller (35ml) and wider (45ml) form factor.",
     "categories": ["teaware", "teacup"],
     "tag": ["glazed", "porcelain", "teacup"],
@@ -47,7 +47,7 @@
   {
     "id": 2,
     "name": "Blue and white hybrid teapot",
-    "productURL": "Blue-and-white-hybrid-teapot",
+    "path": "Blue-and-white-hybrid-teapot",
     "description": "This is a porcelain teapot with a loose fitting lid and wide spout holes. It has a classic blue and white design and has flow and handling properties between a gaiwan and a more traditional teapot with a tighter fitting lid.",
     "categories": ["teaware", "teapot"],
     "tags": ["glazed", "porcelain", "teapot"],
@@ -80,7 +80,7 @@
   {
     "id": 3,
     "name": "Glass fairness pitcher",
-    "productURL": "Glass-fairness-pitcher",
+    "path": "Glass-fairness-pitcher",
     "description": "These are small glass pitcher for evening out your brews. Holding around 215ml when filled up just below the spout, it's good for small solo sessions.",
     "categories": ["teaware", "pitcher"],
     "tags": ["glass", "teaware", "pitcher"],
@@ -103,7 +103,7 @@
   {
     "id": 4,
     "name": "Black teacup",
-    "productURL": "Black-teacup",
+    "path": "Black-teacup",
     "description": "These are glazed black teacups! While not great for seeing the color of your brews, these cups are fun for switching things up.",
     "categories": ["teaware", "teacup"],
     "tags": ["glazed", "teacup"],
@@ -117,7 +117,7 @@
   {
     "id": 5,
     "name": "Lotus lip-filter mug",
-    "productURL": "Lotus-lip-filter-mug",
+    "path": "Lotus-lip-filter-mug",
     "description": "This is a glazed mug with a built-in lip-filter. It features a hand-painted lotus design and is great for grandpa-styling your daily drinker teas.",
     "categories": ["teaware", "mug"],
     "tags": ["teaware", "glazed", "mug"],
@@ -141,7 +141,7 @@
   {
     "id": 6,
     "name": "Porcelain gaiwan",
-    "productURL": "Porcelain-gaiwan",
+    "path": "Porcelain-gaiwan",
     "description": "This is just a plain porcelain gaiwan. Holding around 85ml of liquid with the lid on, it's good for solo sessions or sharing tea with another friend.",
     "categories": ["teaware", "gaiwan"],
     "tags": ["teaware", "porcelain", "gaiwan"],
@@ -165,7 +165,7 @@
   {
     "id": 7,
     "name": "Single-hole porcelain teapot",
-    "productURL": "Single-hole-porcelain-teapot",
+    "path": "Single-hole-porcelain-teapot",
     "description": "This is a porcelain teapot with a single-hole instead of multiple spout holes. This is an interesting teapot to use that is easier to clean that more standard teapots with multiple spout holes.",
     "categories": ["teaware", "teapot"],
     "tags": ["teaware", "porcelain", "glazed", "teapot"],
@@ -192,7 +192,7 @@
   {
     "id": 8,
     "name": "2016 Yunnan green tea",
-    "productURL": "2016-Yunnan-green-tea",
+    "path": "2016-Yunnan-green-tea",
     "description": "This is some old green I still have lying around. Even though its from 2016, this tea is surprisingly potent. I recommend starting at 60C and doing flash steeps. Otherwise it can be quite astringent and bitter, but it an overall nice nutty profile.",
     "categories": ["tea", "green"],
     "tags": ["tea", "green", "Yunnan"],
@@ -230,7 +230,7 @@
   {
     "id": 9,
     "name": "Mellow Ruby 18",
-    "productURL": "Mellow-Ruby-18",
+    "path": "Mellow-Ruby-18",
     "description": "This is a ruby 18 black tea that is less potent than usual. Normally I would recommend steeping ruby 18's western or grandpa style due to how strong they can be, but this one can handle gongfu style brewing without getting too astringent or bitter.",
     "categories": ["tea", "black"],
     "tags": ["tea", "black"],
