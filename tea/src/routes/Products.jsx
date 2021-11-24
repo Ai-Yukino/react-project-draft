@@ -16,11 +16,19 @@ function Product({ name, images, prices, path }) {
 
   return (
     <div className="visualize">
-      <img
-        className="squircle"
-        src={images[0].url + "s.png"}
-        alt={images[0].alt}
-      />
+      <Link
+        to={path}
+        onClick={() => {
+          document.title = "A small tea shop | " + name;
+        }}
+      >
+        <img
+          className="squircle"
+          src={images[0].url + "s.png"}
+          alt={images[0].alt}
+        />
+      </Link>
+
       <div className="bgColor-snow flex-center squircle padding-vertical">
         <Link
           to={path}
