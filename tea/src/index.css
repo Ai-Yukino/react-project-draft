@@ -44,3 +44,42 @@ code {
 .squircle {
   border-radius: 15px;
 }
+
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.position-relative {
+  position: relative;
+  /* margin: 0 auto; */
+}
+
+.height-250px {
+  height: 250px;
+}
+
+.width-400px {
+  width: 400px;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition-opacity {
+  transition: opacity 0.2s ease 0s;
+}
+
+.hover-opacity:hover {
+  opacity: 1;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.hover-color-olive:hover {
+  color: olive;
+}

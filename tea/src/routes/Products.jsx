@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function Product({ name, images, prices, path }) {
+  // 🍂Price calculations🍃
   let hasMultiplePrices = prices.length > 1;
-
   const pricesArray = prices.map((object) => {
     return object.price;
   });
@@ -14,6 +14,17 @@ function Product({ name, images, prices, path }) {
     hasMultiplePrices = false;
   }
 
+  // 🍂Image calculations🍃
+  const Images = images.filter((image) => {
+    return image.hasOwnProperty("display");
+  });
+  const topImage = Images.find((object) => {
+    return object.display === "top";
+  });
+  const bottomImage = Images.find((object) => {
+    return object.display === "bottom";
+  });
+
   return (
     <div className="visualize">
       <Link
@@ -22,15 +33,23 @@ function Product({ name, images, prices, path }) {
           document.title = "A small tea shop | " + name;
         }}
       >
-        <img
-          className="squircle"
-          src={images[0].url + "s.png"}
-          alt={images[0].alt}
-        />
+        <div className="position-relative height-250px width-400px">
+          <img
+            className="squircle position-absolute transition-opacity"
+            src={topImage.url + "s.png"}
+            alt={topImage.alt}
+          />
+          <img
+            className="squircle position-absolute opacity-0 transition-opacity hover-opacity"
+            src={bottomImage.url + "s.png"}
+            alt={bottomImage.alt}
+          />
+        </div>
       </Link>
 
       <div className="bgColor-snow flex-center squircle padding-vertical">
         <Link
+          className="no-text-decoration hover-color-olive"
           to={path}
           onClick={() => {
             document.title = "A small tea shop | " + name;
@@ -51,6 +70,7 @@ function Product({ name, images, prices, path }) {
 }
 
 function Products() {
+  document.title = "A small tea shop";
   const [productsData, setProductsData] = useState([]);
 
   useEffect(() => {
