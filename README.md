@@ -10,16 +10,17 @@ vite (or npm run dev)
 
 ## Current task
 
-Nicer `Products.jsx`
-
-- Edit `products.JSON` and `/images` folder to choose display image
-- Use `hasOwnProperty()` maybe
-
-## Next tasks
-
 `ProductPage.jsx`
 
 - Make individual product pages
+
+## Next tasks
+
+Nicer `Products.jsx`
+
+- Dropdown filter (e.g. by date-added, price)
+- Shopping cart
+- Search
 
 ## Design inpsiration
 
