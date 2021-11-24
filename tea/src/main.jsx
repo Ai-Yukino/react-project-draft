@@ -10,7 +10,7 @@ import ProductPage from "./routes/ProductPage";
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/:productName" element={<ProductPage />} />
+      <Route path="/:productPath" element={<ProductPage />} />
       <Route path="/" element={<App />} />
     </Routes>
   </BrowserRouter>,

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-function Product({ name, images, prices, productURL }) {
+function Product({ name, images, prices, path }) {
   let hasMultiplePrices = prices.length > 1;
 
   const pricesArray = prices.map((object) => {
@@ -22,7 +22,7 @@ function Product({ name, images, prices, productURL }) {
         alt={images[0].alt}
       />
       <div className="bgColor-snow flex-center squircle padding-vertical">
-        <Link to={productURL}>
+        <Link to={path}>
           <div>{name}</div>
         </Link>
 
@@ -59,7 +59,7 @@ function Products() {
         name={product.name}
         images={product.images}
         prices={product.prices}
-        productURL={product.productURL}
+        path={product.path}
       />
     );
   });
