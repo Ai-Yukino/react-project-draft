@@ -22,10 +22,14 @@ Nicer `Products.jsx`
 - Shopping cart
 - Search
 
+Look into [Cloudfare Images CDN](https://www.cloudflare.com/products/cloudflare-images/)
+
 ## Design inpsiration
 
 [🔗 Bitterleaf teas](https://www.bitterleafteas.com/shop)  
-[🔗 Three bears tea](https://www.threebearstea.com/collections/teapots)
+[🔗 Three bears tea](https://www.threebearstea.com/collections/teapots)  
+[🔗 Yunomi](https://yunomi.life/)  
+[🔗 Liquid Proust](https://www.liquidproust.com/)
 
 ## Notes
 
