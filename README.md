@@ -13,6 +13,10 @@ vite (or npm run dev)
 `ProductPage.jsx`
 
 - Make individual product pages
+  - Add image carousel
+    - Test and choose small image size for image selection
+    - Add looping for image selection
+    - Add click-and-drag carousel for image selection
 
 ## Next tasks
 
@@ -45,7 +49,8 @@ Look into [Cloudfare Images CDN](https://www.cloudflare.com/products/cloudflare-
 [👥 Set title in react page](https://stackoverflow.com/a/46160586)  
 [👥 Check if object has property](https://dmitripavlutin.com/check-if-object-has-property-javascript/)  
 [👥 Cross fading images](http://css3.bradshawenterprises.com/cfimg/)  
-[👥 Cross fade images inside flexbox](https://stackoverflow.com/a/46891338)
+[👥 Cross fade images inside flexbox](https://stackoverflow.com/a/46891338)  
+[👥 CSS-only carousel (CSS tricks)](https://css-tricks.com/css-only-carousel/)
 
 ## Requirements
 
