@@ -5,7 +5,7 @@
     "path": "Dim-sum-teacups",
     "description": "These plain white teacups are what you might find in a dim sum restaurant. They're available in a taller (35ml) and wider (45ml) form factor.",
     "categories": ["teaware", "teacup"],
-    "tag": ["glazed", "porcelain", "teacup"],
+    "tags": ["glazed", "porcelain", "teacup"],
     "options": [
       { "option": "A", "option-description": "taller" },
       { "option": "B", "option-description": "wider" }
@@ -41,8 +41,8 @@
       }
     ],
     "measurements": [
-      { "option": "A", "volume": 35 },
-      { "option": "B", "volume": 45 }
+      { "option": "A", "volume": 35, "units": "ml" },
+      { "option": "B", "volume": 45, "units": "ml" }
     ],
     "date": { "date-added": "2019-05-25T15:00:00-06:00" }
   },
@@ -57,7 +57,7 @@
       { "option": "default", "option-description": "default option" }
     ],
     "prices": [{ "option": "default", "price": 10 }],
-    "stock": [{ "option": "default", "count": 7 }],
+    "stock": [{ "option": "default", "stock": 7 }],
     "images": [
       {
         "alt": "blue and white hybrid teapot - side view",
@@ -78,7 +78,7 @@
         "url": "../images/2-4"
       }
     ],
-    "measurements": [{ "option": "default", "volume": 180 }],
+    "measurements": [{ "option": "default", "volume": 180, "units": "ml" }],
     "date": { "date-added": "2017-08-13T08:00:00-06:00" }
   },
   {
@@ -90,7 +90,7 @@
     "tags": ["glass", "teaware", "pitcher"],
     "options": [{ "option": "default" }],
     "prices": [{ "option": "default", "price": 2.5 }],
-    "stock": [{ "option": "default", "count": 38 }],
+    "stock": [{ "option": "default", "stock": 38 }],
     "images": [
       {
         "alt": "glass fairness pitcher - side view",
@@ -103,7 +103,7 @@
         "display": "bottom"
       }
     ],
-    "measurements": [{ "option": "default", "volume": 215 }],
+    "measurements": [{ "option": "default", "volume": 215, "units": "ml" }],
     "date": { "date-added": "2013-05-04T16:00:00-06:00" }
   },
   {
@@ -115,7 +115,7 @@
     "tags": ["glazed", "teacup"],
     "options": [{ "option": "default" }],
     "prices": [{ "option": "default", "price": 1.5 }],
-    "stock": [{ "option": "default", "count": 12 }],
+    "stock": [{ "option": "default", "stock": 12 }],
     "images": [
       { "alt": "Black teacup", "url": "../images/4-1", "display": "top" },
       {
@@ -124,7 +124,7 @@
         "display": "bottom"
       }
     ],
-    "measurements": [{ "option": "default", "volume": 50 }],
+    "measurements": [{ "option": "default", "volume": 50, "units": "ml" }],
     "date": { "date-added": "2020-12-14T12:30:00-06:00" }
   },
   {
@@ -136,7 +136,7 @@
     "tags": ["teaware", "glazed", "mug"],
     "options": [{ "option": "default" }],
     "prices": [{ "option": "default", "price": 35 }],
-    "stock": [{ "option": "default", "count": 3 }],
+    "stock": [{ "option": "default", "stock": 3 }],
     "images": [
       {
         "alt": "Lotus lip-filter mug - front view",
@@ -153,7 +153,7 @@
         "url": "../images/5-3"
       }
     ],
-    "measurements": [{ "option": "default", "volume": 280 }],
+    "measurements": [{ "option": "default", "volume": 280, "units": "ml" }],
     "date": { "date-added": "2018-10-02T17:00:00-06:00" }
   },
   {
@@ -165,7 +165,7 @@
     "tags": ["teaware", "porcelain", "gaiwan"],
     "options": [{ "option": "default" }],
     "prices": [{ "option": "default", "price": 5 }],
-    "stock": [{ "option": "default", "count": 56 }],
+    "stock": [{ "option": "default", "stock": 56 }],
     "images": [
       { "alt": "Porcelain gaiwan", "url": "../images/6-1", "display": "top" },
       {
@@ -178,7 +178,7 @@
         "url": "../images/6-3"
       }
     ],
-    "measurements": [{ "option": "default", "volume": 85 }],
+    "measurements": [{ "option": "default", "volume": 85, "units": "ml" }],
     "date": { "date-added": "2010-05-22T05:00:00-06:00" }
   },
   {
@@ -190,7 +190,7 @@
     "tags": ["teaware", "porcelain", "glazed", "teapot"],
     "options": [{ "option": "default" }],
     "prices": [{ "option": "default", "price": 4 }],
-    "stock": [{ "option": "default", "count": 78 }],
+    "stock": [{ "option": "default", "stock": 78 }],
     "images": [
       {
         "alt": "Single-hole porcelain teapot - side view",
@@ -207,7 +207,7 @@
         "url": "../images/7-3"
       }
     ],
-    "measurements": [{ "option": "default", "volume": 110 }],
+    "measurements": [{ "option": "default", "volume": 110, "units": "ml" }],
     "date": { "date-added": "2013-11-09T13:30:00-06:00" }
   },
   {
@@ -224,9 +224,9 @@
       { "option": "100g", "price": 12 }
     ],
     "stock": [
-      { "option": "25", "count": 3 },
-      { "option": "50g", "price": 6 },
-      { "option": "100g", "price": 1 }
+      { "option": "25", "stock": 3 },
+      { "option": "50g", "stock": 6 },
+      { "option": "100g", "stock": 1 }
     ],
     "images": [
       {
@@ -257,15 +257,16 @@
     "description": "This is a ruby 18 black tea that is less potent than usual. Normally I would recommend steeping ruby 18's western or grandpa style due to how strong they can be, but this one can handle gongfu style brewing without getting too astringent or bitter.",
     "categories": ["tea", "black"],
     "tags": ["tea", "black"],
+    "options": [{ "option": "25g" }, { "option": "50g" }, { "option": "100g" }],
     "prices": [
       { "option": "25g", "price": 7 },
       { "option": "50g", "price": 12.5 },
       { "option": "100g", "price": 20 }
     ],
     "stock": [
-      { "option": "25", "count": 20 },
-      { "option": "50g", "price": 14 },
-      { "option": "100g", "price": 3 }
+      { "option": "25", "stock": 20 },
+      { "option": "50g", "stock": 14 },
+      { "option": "100g", "stock": 3 }
     ],
     "images": [
       {
