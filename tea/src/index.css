@@ -16,6 +16,25 @@ code {
 
 /* Start custom CSS */
 
+/* 🍂Color🍃 */
+
+.bg-color-eggshell-paper {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  background-color: #e2be9f;
+}
+
+.hover-color-young-bamboo:hover {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  color: #6b9362;
+}
+
+.bg-color-red-wisteria {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  background-color: #bb7796;
+}
+
+/* 🍂Flex🍃 */
+
 .flex {
   display: flex;
 }
@@ -36,41 +55,65 @@ code {
   align-items: center;
 }
 
+/* 🍂Padding and margins🍃 */
+
 .pd-5px {
   padding: 5px;
-}
-
-.mt-50px {
-  margin-top: 50px;
 }
 
 .pd-top-10px {
   padding-top: 15px;
 }
 
+.mt-50px {
+  margin-top: 50px;
+}
+
 .mb-50px {
   margin-bottom: 50px;
 }
 
+/* 🍂Height and width🍃 */
+
 .h-250px {
   height: 250px;
-}
-
-.w-400px {
-  width: 400px;
 }
 
 .h-500px {
   height: 500px;
 }
 
+.max-h-500px {
+  max-height: 500px;
+}
+
+.w-400px {
+  width: 400px;
+}
+
 .w-800px {
   width: 800px;
 }
 
+.width-100percent {
+  width: 100%;
+}
+
+.w-25vw {
+  width: 25vw;
+}
+
+.max-w-100percent {
+  max-width: 100%;
+}
+
+/* 🍂Border radius🍃 */
+
 .br-15px {
   border-radius: 15px;
 }
+
+/* 🍂Position🍃 */
 
 .position-absolute {
   position: absolute;
@@ -80,13 +123,17 @@ code {
   position: relative;
 }
 
+/* 🍂Opacity🍃 */
+
 .opacity-0 {
   opacity: 0;
 }
 
-.transition-opacity {
-  transition-property: opacity;
+.hover-opacity-1:hover {
+  opacity: 1;
 }
+
+/* 🍂Transition🍃 */
 
 .transition-0-2s {
   transition-duration: 0.2s;
@@ -96,62 +143,27 @@ code {
   transition-timing-function: ease-in-out;
 }
 
-.hover-opacity-1:hover {
-  opacity: 1;
-}
+/* 🍂Text decoration🍃 */
 
 .text-decoration-none {
   text-decoration: none;
 }
 
-.hover-color-young-bamboo:hover {
-  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
-  color: #6b9362;
-}
+/* 🍂Overflow🍃 */
 
-.flex-2 {
-  display: flex;
-  justify-content: space-around;
-}
-
-.flex-3 {
-  display: flex;
-  flex-direction: column;
-  /* max-height: 500px;
-  max-width: 800px; */
-  max-height: 500px;
-  max-width: 100%;
+.overflow-y-hidden {
   overflow-y: hidden;
-  /* flex-shrink: 0; */
-}
-
-.flex-4 {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-shrink {
-  flex-shrink: 3;
-}
-
-.min-width {
-  min-width: 0;
-}
-
-.adaptive-width {
-  width: 100%;
-  height: auto;
-}
-
-.flex-shrink-2 {
-  flex-shrink: 4;
-}
-
-.test {
-  width: 25vw;
 }
 
 /* Old CSS */
+
+/* .flex-shrink {
+  flex-shrink: 3;
+} */
+
+/* .flex-shrink-2 {
+  flex-shrink: 4;
+} */
 
 /* .flex-center {
   display: flex;
@@ -222,4 +234,31 @@ code {
 /* .padding-vertical {
   padding-top: 5px;
   padding-bottom: 5px;
+} */
+
+/* .flex-2 {
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* .flex-3 {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  max-width: 100%;
+  overflow-y: hidden;
+} */
+
+/* .adaptive-width {
+  width: 100%;
+  height: auto;
+} */
+
+/* .test {
+  width: 25vw;
+} */
+
+/* .flex-4 {
+  display: flex;
+  flex-direction: column;
 } */

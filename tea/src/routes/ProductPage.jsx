@@ -6,11 +6,20 @@ function ProductImages({ images }) {
   // 🍂Image calculations🍃
   function FeaturedImage({ images }) {
     return (
-      <div className="flex-3 flex-shrink">
+      <div
+        className={
+          "flex" +
+          " column" +
+          " overflow-y-hidden" +
+          " max-h-500px" +
+          " max-w-100percent" +
+          " br-15px"
+        }
+      >
         {images.map((image) => {
           return (
             <img
-              className="squircle adaptive-width"
+              className={"br-15px" + " width-100percent"}
               src={image.url + ".png"}
               alt={image.alt}
             />
@@ -22,7 +31,7 @@ function ProductImages({ images }) {
   function ImageList({ images }) {}
 
   return (
-    <div className="squircle bgColor-snow">
+    <div>
       <FeaturedImage images={images} />
     </div>
   );
@@ -115,7 +124,11 @@ function ProductInfo({
   }
 
   return (
-    <div className="bgColor-snow squircle test flex-4">
+    <div
+      className={
+        "flex" + " column" + " w-25vw" + " br-15px" + " bg-color-eggshell-paper"
+      }
+    >
       <div>{name}</div>
       <div>{description}</div>
       <Categories categories={categories} />
@@ -163,7 +176,7 @@ export default function ProductPage() {
   }, []);
 
   return (
-    <div className="flex-2 visualize">
+    <div className={"flex" + " space-evenly" + " bg-color-red-wisteria"}>
       <ProductImages images={product.images} />
       <ProductInfo
         name={product.name}
