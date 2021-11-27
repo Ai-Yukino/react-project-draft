@@ -26,7 +26,7 @@ function Product({ name, images, prices, path }) {
   });
 
   return (
-    <div className="visualize">
+    <div className={"pd-5px" + " mt-50px" + " mb-50px"}>
       <Link
         to={path}
         onClick={() => {
@@ -34,23 +34,30 @@ function Product({ name, images, prices, path }) {
           console.log(document.links);
         }}
       >
-        <div className="position-relative height-250px width-400px">
+        <div className={"position-relative" + " h-250px" + " w-400px"}>
           <img
-            className="squircle position-absolute transition-opacity"
+            className={"position-absolute" + " br-15px"}
             src={topImage.url + "s.png"}
             alt={topImage.alt}
           />
           <img
-            className="squircle position-absolute opacity-0 transition-opacity hover-opacity"
+            className={
+              " position-absolute" +
+              " br-15px" +
+              " opacity-0" +
+              " transition-0-2s" +
+              " ease-in-out" +
+              " hover-opacity-1"
+            }
             src={bottomImage.url + "s.png"}
             alt={bottomImage.alt}
           />
         </div>
       </Link>
 
-      <div className="bgColor-snow flex-center squircle padding-vertical">
+      <div className={"flex" + " column" + " center" + " pd-top-10px"}>
         <Link
-          className="no-text-decoration hover-color-olive"
+          className={"text-decoration-none" + " hover-color-young-bamboo"}
           to={path}
           onClick={() => {
             document.title = "A small tea shop | " + name;
@@ -106,7 +113,7 @@ function Products() {
   //     );
   //   })
   // );
-  return <div className="flex">{products}</div>;
+  return <div className={"flex" + " space-evenly" + " wrap"}>{products}</div>;
 }
 
 export default Products;

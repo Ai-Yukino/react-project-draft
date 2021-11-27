@@ -1,3 +1,5 @@
+/* Vite default presets */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -12,64 +14,70 @@ code {
     monospace;
 }
 
-.visualize {
-  background-color: burlywood;
-  padding: 5px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 5px;
-}
+/* Start custom CSS */
 
 .flex {
   display: flex;
+}
+
+.space-evenly {
   justify-content: space-evenly;
+}
+
+.wrap {
   flex-wrap: wrap;
 }
 
-.bgColor-snow {
-  background-color: snow;
-}
-
-.padding-vertical {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.flex-center {
-  display: flex;
+.column {
   flex-direction: column;
+}
+
+.center {
   align-items: center;
 }
 
-.squircle {
+.pd-5px {
+  padding: 5px;
+}
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.pd-top-10px {
+  padding-top: 15px;
+}
+
+.mb-50px {
+  margin-bottom: 50px;
+}
+
+.h-250px {
+  height: 250px;
+}
+
+.w-400px {
+  width: 400px;
+}
+
+.h-500px {
+  height: 500px;
+}
+
+.w-800px {
+  width: 800px;
+}
+
+.br-15px {
   border-radius: 15px;
 }
 
 .position-absolute {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .position-relative {
   position: relative;
-  /* margin: 0 auto; */
-}
-
-.height-250px {
-  height: 250px;
-}
-
-.width-400px {
-  width: 400px;
-}
-
-.height-500px {
-  height: 500px;
-}
-
-.width-800px {
-  width: 800px;
 }
 
 .opacity-0 {
@@ -77,19 +85,28 @@ code {
 }
 
 .transition-opacity {
-  transition: opacity 0.2s ease 0s;
+  transition-property: opacity;
 }
 
-.hover-opacity:hover {
+.transition-0-2s {
+  transition-duration: 0.2s;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.hover-opacity-1:hover {
   opacity: 1;
 }
 
-.no-text-decoration {
+.text-decoration-none {
   text-decoration: none;
 }
 
-.hover-color-olive:hover {
-  color: olive;
+.hover-color-young-bamboo:hover {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  color: #6b9362;
 }
 
 .flex-2 {
@@ -133,3 +150,76 @@ code {
 .test {
   width: 25vw;
 }
+
+/* Old CSS */
+
+/* .flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+/* .flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} */
+
+/* .visualize {
+  background-color: burlywood;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+} */
+
+/* .bgColor-burlywood {
+  background-color: burlywood;
+} */
+
+/* .br-5 {
+  border-radius: 5px;
+} */
+
+/* .bgColor-snow {
+  background-color: snow;
+} */
+
+/* .position-relative {
+  position: relative;
+} */
+
+/* .squircle {
+  border-radius: 15px;
+} */
+
+/* .position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* .top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+} */
+
+/* .transition-opacity {
+  transition: opacity 0.2s ease 0s;
+} */
+
+/* .hover-opacity:hover {
+  opacity: 1;
+} */
+
+/* .no-text-decoration {
+  text-decoration: none;
+} */
+
+/* .padding-vertical {
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
