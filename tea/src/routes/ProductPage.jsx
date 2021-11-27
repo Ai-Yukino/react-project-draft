@@ -2,7 +2,31 @@ import { map } from "cheerio/lib/api/traversing";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-function ProductImages({ images }) {}
+function ProductImages({ images }) {
+  // 🍂Image calculations🍃
+  function FeaturedImage({ images }) {
+    return (
+      <div className="flex-3 flex-shrink">
+        {images.map((image) => {
+          return (
+            <img
+              className="squircle adaptive-width"
+              src={image.url + ".png"}
+              alt={image.alt}
+            />
+          );
+        })}
+      </div>
+    );
+  }
+  function ImageList({ images }) {}
+
+  return (
+    <div className="squircle bgColor-snow">
+      <FeaturedImage images={images} />
+    </div>
+  );
+}
 
 function ProductInfo({
   name,
@@ -91,7 +115,7 @@ function ProductInfo({
   }
 
   return (
-    <div className="bgColor-snow squircle">
+    <div className="bgColor-snow squircle test flex-4">
       <div>{name}</div>
       <div>{description}</div>
       <Categories categories={categories} />
@@ -139,7 +163,8 @@ export default function ProductPage() {
   }, []);
 
   return (
-    <div className="flex visualize">
+    <div className="flex-2 visualize">
+      <ProductImages images={product.images} />
       <ProductInfo
         name={product.name}
         description={product.description}
