@@ -10,12 +10,6 @@ vite (or npm run dev)
 
 ## Current task
 
-Review code
-
-- Clean up CSS
-
-## Next tasks
-
 `ProductPage.jsx`
 
 - Make individual product pages
@@ -24,6 +18,8 @@ Review code
     - Add looping for image selection
     - Add click-and-drag carousel for image selection
     - Add media queries for responsive image sizes
+
+## Next tasks
 
 Nicer `Products.jsx`
 
