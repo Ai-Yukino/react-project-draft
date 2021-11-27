@@ -17,6 +17,7 @@ vite (or npm run dev)
     - Test and choose small image size for image selection
     - Add looping for image selection
     - Add click-and-drag carousel for image selection
+    - Add media queries for responsive image sizes
 
 ## Next tasks
 
