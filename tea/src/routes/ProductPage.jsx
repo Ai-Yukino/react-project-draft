@@ -176,7 +176,11 @@ export default function ProductPage() {
   }, []);
 
   return (
-    <div className={"flex" + " space-evenly" + " bg-color-red-wisteria"}>
+    <div
+      className={
+        "flex" + " space-evenly" + " bg-color-red-wisteria" + " mt-125px"
+      }
+    >
       <ProductImages images={product.images} />
       <ProductInfo
         name={product.name}
