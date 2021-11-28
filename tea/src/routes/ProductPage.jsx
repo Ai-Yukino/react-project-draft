@@ -59,6 +59,8 @@ import { useParams } from "react-router-dom";
 // }
 
 function ProductImages({ images }) {
+  const [selectedImage, setSelectedImage] = useState("image-1");
+
   return (
     // 🍂Featured image calculations🍃
     <div className={"flex" + " space-evenly" + " w-70vw"}>
@@ -90,9 +92,17 @@ function ProductImages({ images }) {
       <div className={"flex" + " column" + " space-around"}>
         {images.map((image) => {
           return (
-            <a href={"#" + image.hash}>
+            <a
+              href={"#" + image.hash}
+              onClick={(e) => {
+                setSelectedImage(image.hash);
+              }}
+            >
               <img
-                className={" br-15px"}
+                className={
+                  " br-15px" +
+                  (image.hash === selectedImage ? " border-green-bamboo" : "")
+                }
                 src={image.url + "-20percent.png"}
                 alt={image.alt}
               />
@@ -215,8 +225,6 @@ function ProductInfo({
 
 export default function ProductPage() {
   let params = useParams();
-
-  console.log(document.links);
 
   const [product, setProduct] = useState({
     id: 0,

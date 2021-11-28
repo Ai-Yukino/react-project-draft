@@ -13,18 +13,18 @@ vite (or npm run dev)
 `ProductPage.jsx`
 
 - Make individual product pages
-  - Add image selection
-    - Look into routing versus using state
-    - Add state to change and scroll to `FeaturedImage()` when `ImageList()` is clicked
-    - Add CSS changes to state (e.g. border on selected image)
+  - Add return `Link` to `Products.jsx`
+  - Make `ProductInfo()` look nicer and functional
 
 ## Next tasks
 
 Nicer `Products.jsx`
 
-- Dropdown filter (e.g. by date-added, price)
 - Shopping cart
+- Dropdown filter (e.g. by date-added, price)
 - Search
+
+Back button on product page -> `Products.jsx` instead of hash links
 
 Responsive design
 
