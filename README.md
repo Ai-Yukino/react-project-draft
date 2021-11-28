@@ -14,6 +14,7 @@ vite (or npm run dev)
 
 - Make individual product pages
   - Add image selection
+    - Look into routing versus using state
     - Add state to change and scroll to `FeaturedImage()` when `ImageList()` is clicked
     - Add CSS changes to state (e.g. border on selected image)
 
