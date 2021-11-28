@@ -82,6 +82,7 @@ function ProductImages({ images }) {
                 className={"br-15px" + " width-100percent"}
                 src={image.url + ".png"}
                 alt={image.alt}
+                key={image.hash}
               />
             </div>
           );
@@ -105,6 +106,7 @@ function ProductImages({ images }) {
                 }
                 src={image.url + "-20percent.png"}
                 alt={image.alt}
+                key={image.hash}
               />
             </a>
           );
@@ -128,9 +130,13 @@ function ProductInfo({
   function Categories({ categories }) {
     return (
       <div>
-        Categories:{" "}
-        {categories.map((category) => {
-          return <span>{category} </span>;
+        <strong>Categories</strong>:{" "}
+        {categories.map((category, index) => {
+          return (
+            <span key={category}>
+              {category + (index + 1 < categories.length ? ", " : "")}
+            </span>
+          );
         })}
       </div>
     );
@@ -139,9 +145,13 @@ function ProductInfo({
   function Tags({ tags }) {
     return (
       <div>
-        Tags:{" "}
-        {tags.map((tag) => {
-          return <span>{tag} </span>;
+        <strong>Tags</strong>:{" "}
+        {tags.map((tag, index) => {
+          return (
+            <span key={tag}>
+              {tag + (index + 1 < tags.length ? ", " : "")}{" "}
+            </span>
+          );
         })}
       </div>
     );
@@ -151,9 +161,9 @@ function ProductInfo({
   function Options({ options }) {
     return (
       <div>
-        Options:{" "}
+        <strong>Options</strong>:{" "}
         {options.map((option) => {
-          return <span>{option.option} </span>;
+          return <span key={option.option}>{option.option} </span>;
         })}
       </div>
     );
@@ -163,9 +173,9 @@ function ProductInfo({
   function Prices({ prices }) {
     return (
       <div>
-        Prices:{" "}
+        <strong>Prices</strong>:{" "}
         {prices.map((price) => {
-          return <span>${price.price.toFixed(2)} </span>;
+          return <span key={price.option}>${price.price.toFixed(2)} </span>;
         })}
       </div>
     );
@@ -173,26 +183,38 @@ function ProductInfo({
 
   // 🍂Stock calculation🍃
   function Stock({ stock }) {
-    return (
-      <div>
-        {stock.map((option) => {
-          return (
-            <>
-              {option.stock <= 0 && (
-                <span>Option {option.option}: Out of stock</span>
-              )}
-            </>
-          );
-        })}
-      </div>
-    );
+    if (
+      stock.find((option) => {
+        return option.stock <= 0;
+      })
+    ) {
+      return (
+        <div>
+          {stock.map((option) => {
+            return (
+              <>
+                {option.stock <= 0 && (
+                  <span key={option.option}>
+                    {option.option === "default"
+                      ? "Out of stock"
+                      : "Option " + option.option + ": out of stock"}
+                  </span>
+                )}
+              </>
+            );
+          })}
+        </div>
+      );
+    } else {
+      return <></>;
+    }
   }
 
   // 🍂Measurements calculation🍃
   function Measurements({ measurements }) {
     return (
       <div>
-        Capacity:{" "}
+        <strong>Capacity</strong>:{" "}
         {measurements.map((option) => {
           return <span>{option.volume + option.units} </span>;
         })}
@@ -208,16 +230,17 @@ function ProductInfo({
         " w-20vw" +
         " br-15px" +
         " pd-20px" +
-        " bg-color-eggshell-paper"
+        " bg-color-seashell" +
+        " space-around"
       }
     >
-      <div>{name}</div>
+      <h1>{name}</h1>
       <div>{description}</div>
-      <Categories categories={categories} />
-      <Tags tags={tags} />
       {options.length > 1 && <Options options={options} />}
       <Prices prices={prices} />
       <Stock stock={stock} />
+      <Categories categories={categories} />
+      <Tags tags={tags} />
       {measurements && <Measurements measurements={measurements} />}
     </div>
   );

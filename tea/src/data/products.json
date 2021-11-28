@@ -243,7 +243,7 @@
     "id": 8,
     "name": "2016 Yunnan green tea",
     "path": "2016-Yunnan-green-tea",
-    "description": "This is some old green I still have lying around. Even though its from 2016, this tea is surprisingly potent. I recommend starting at 60C and doing flash steeps. Otherwise it can be quite astringent and bitter, but it an overall nice nutty profile.",
+    "description": "This is some old green I still have lying around. Even though its from 2016, this tea is surprisingly potent. I recommend starting at 60C and doing flash steeps. Otherwise it can be quite astringent and bitter. Overall, it has a nice nutty profile.",
     "categories": ["tea", "green"],
     "tags": ["tea", "green", "Yunnan"],
     "options": [{ "option": "25g" }, { "option": "50g" }, { "option": "100g" }],
