@@ -53,7 +53,8 @@ Look into [Cloudfare Images CDN](https://www.cloudflare.com/products/cloudflare-
 [👥 Cross fade images inside flexbox](https://stackoverflow.com/a/46891338)  
 [👥 CSS-only carousel (CSS tricks)](https://css-tricks.com/css-only-carousel/)  
 [👥 Adaptive image size with flexbox (SO)](https://stackoverflow.com/a/41775258)  
-[👥 Reimagining atomic CSS](https://antfu.me/posts/reimagine-atomic-css)
+[👥 Reimagining atomic CSS](https://antfu.me/posts/reimagine-atomic-css)  
+[👥 Infraview](https://en.wikipedia.org/wiki/IrfanView)
 
 ## Requirements
 
