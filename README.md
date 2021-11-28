@@ -13,19 +13,22 @@ vite (or npm run dev)
 `ProductPage.jsx`
 
 - Make individual product pages
-  - Add image carousel
-    - Test and choose small image size for image selection
-    - Add looping for image selection
-    - Add click-and-drag carousel for image selection
-    - Add media queries for responsive image sizes
+  - Add return `Link` to `Products.jsx`
+  - Make `ProductInfo()` look nicer and functional
 
 ## Next tasks
 
 Nicer `Products.jsx`
 
-- Dropdown filter (e.g. by date-added, price)
 - Shopping cart
+- Dropdown filter (e.g. by date-added, price)
 - Search
+
+Back button on product page -> `Products.jsx` instead of hash links
+
+Responsive design
+
+- Add media queries to adjust for image spacing in `Products.jsx`
 
 Look into [Cloudfare Images CDN](https://www.cloudflare.com/products/cloudflare-images/)
 

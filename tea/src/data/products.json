@@ -22,22 +22,26 @@
       {
         "alt": "Taller dim sum cup",
         "url": "../images/01/01",
+        "hash": "image-1",
         "option": "A",
         "display": "top"
       },
       {
         "alt": "Wider dim sum cup",
         "url": "../images/01/02",
+        "hash": "image-2",
         "option": "B"
       },
       {
         "alt": "Taller and wider dim sum cups - 2 cups",
         "url": "../images/01/03",
+        "hash": "image-3",
         "display": "bottom"
       },
       {
         "alt": "Taller and wider dim sum cups - 4 cups",
-        "url": "../images/01/04"
+        "url": "../images/01/04",
+        "hash": "image-4"
       }
     ],
     "measurements": [
@@ -62,20 +66,24 @@
       {
         "alt": "blue and white hybrid teapot - side view",
         "url": "../images/02/01",
+        "hash": "image-1",
         "display": "top"
       },
       {
         "alt": "blue and white hybrid teapot - front view",
         "url": "../images/02/02",
+        "hash": "image-2",
         "display": "bottom"
       },
       {
         "alt": "blue and white hybrid teapot - lid off",
-        "url": "../images/02/03"
+        "url": "../images/02/03",
+        "hash": "image-3"
       },
       {
         "alt": "blue and white hybrid teapot - spout holes",
-        "url": "../images/02/04"
+        "url": "../images/02/04",
+        "hash": "image-4"
       }
     ],
     "measurements": [{ "option": "default", "volume": 180, "units": "ml" }],
@@ -95,11 +103,13 @@
       {
         "alt": "glass fairness pitcher - side view",
         "url": "../images/03/01",
+        "hash": "image-1",
         "display": "top"
       },
       {
         "alt": "glass fairness pitcher - front view",
         "url": "../images/03/02",
+        "hash": "image-2",
         "display": "bottom"
       }
     ],
@@ -117,10 +127,16 @@
     "prices": [{ "option": "default", "price": 1.5 }],
     "stock": [{ "option": "default", "stock": 12 }],
     "images": [
-      { "alt": "Black teacup", "url": "../images/04/01", "display": "top" },
+      {
+        "alt": "Black teacup",
+        "url": "../images/04/01",
+        "hash": "image-1",
+        "display": "top"
+      },
       {
         "alt": "Black teacup - with tea",
         "url": "../images/04/02",
+        "hash": "image-2",
         "display": "bottom"
       }
     ],
@@ -141,16 +157,19 @@
       {
         "alt": "Lotus lip-filter mug - front view",
         "url": "../images/05/01",
+        "hash": "image-1",
         "display": "bottom"
       },
       {
         "alt": "Lotus lip-filter mug - lid off",
         "url": "../images/05/02",
+        "hash": "image-2",
         "display": "top"
       },
       {
         "alt": "Lotus lip-filter mug - lip-flter",
-        "url": "../images/05/03"
+        "url": "../images/05/03",
+        "hash": "image-3"
       }
     ],
     "measurements": [{ "option": "default", "volume": 280, "units": "ml" }],
@@ -167,15 +186,22 @@
     "prices": [{ "option": "default", "price": 5 }],
     "stock": [{ "option": "default", "stock": 56 }],
     "images": [
-      { "alt": "Porcelain gaiwan", "url": "../images/06/01", "display": "top" },
+      {
+        "alt": "Porcelain gaiwan",
+        "url": "../images/06/01",
+        "hash": "image-1",
+        "display": "top"
+      },
       {
         "alt": "Porcelain gaiwan - lid balanced",
         "url": "../images/06/02",
+        "hash": "image-2",
         "display": "bottom"
       },
       {
         "alt": "Porcelain gaiwan - pieces removed",
-        "url": "../images/06/03"
+        "url": "../images/06/03",
+        "hash": "image-3"
       }
     ],
     "measurements": [{ "option": "default", "volume": 85, "units": "ml" }],
@@ -195,16 +221,19 @@
       {
         "alt": "Single-hole porcelain teapot - side view",
         "url": "../images/07/01",
+        "hash": "image-1",
         "display": "top"
       },
       {
         "alt": "Single-hole porcelain teapot - front view",
         "url": "../images/07/02",
+        "hash": "image-2",
         "display": "bottom"
       },
       {
         "alt": "Single-hole porcelain teapot - lid off",
-        "url": "../images/07/03"
+        "url": "../images/07/03",
+        "hash": "image-3"
       }
     ],
     "measurements": [{ "option": "default", "volume": 110, "units": "ml" }],
@@ -232,20 +261,24 @@
       {
         "alt": "2016 Yunnan green tea - dry leaf",
         "url": "../images/08/01",
+        "hash": "image-1",
         "display": "top"
       },
       {
         "alt": "2016 Yunnan green tea - steeping",
-        "url": "../images/08/02"
+        "url": "../images/08/02",
+        "hash": "image-2"
       },
       {
         "alt": "2016 Yunnan green tea - finished brew",
         "url": "../images/08/03",
+        "hash": "image-3",
         "display": "bottom"
       },
       {
         "alt": "2016 Yunnan green tea - wet leaf",
-        "url": "../images/08/04"
+        "url": "../images/08/04",
+        "hash": "image-4"
       }
     ],
     "date": { "date-added": "2018-02-15T01:00:00-06:00" }
@@ -272,15 +305,25 @@
       {
         "alt": "Mellow Ruby 18 - dry leaf",
         "url": "images/09/01",
+        "hash": "image-1",
         "display": "top"
       },
-      { "alt": "Mellow Ruby 18 - steeping", "url": "../images/09/02" },
+      {
+        "alt": "Mellow Ruby 18 - steeping",
+        "url": "../images/09/02",
+        "hash": "image-2"
+      },
       {
         "alt": "Mellow Ruby 18 - finished brew",
         "url": "../images/09/03",
+        "hash": "image-3",
         "display": "bottom"
       },
-      { "alt": "Mellow Ruby 18 - wet leaf", "url": "../images/09/04" }
+      {
+        "alt": "Mellow Ruby 18 - wet leaf",
+        "url": "../images/09/04",
+        "hash": "image-4"
+      }
     ],
     "date": { "date-added": "2020-07-24T14:45:00-06:00" }
   }
