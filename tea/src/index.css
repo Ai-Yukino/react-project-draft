@@ -33,6 +33,15 @@ code {
   background-color: #bb7796;
 }
 
+.bg-color-cypress-bark {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  background-color: #752e23;
+}
+
+.bgColor-snow {
+  background-color: snow;
+}
+
 /* 🍂Flex🍃 */
 
 .flex {
@@ -41,6 +50,10 @@ code {
 
 .space-evenly {
   justify-content: space-evenly;
+}
+
+.space-around {
+  justify-content: space-around;
 }
 
 .wrap {
@@ -59,6 +72,10 @@ code {
 
 .pd-5px {
   padding: 5px;
+}
+
+.pd-20px {
+  padding: 20px;
 }
 
 .pd-top-10px {
@@ -103,12 +120,22 @@ code {
   width: 100%;
 }
 
-.w-25vw {
-  width: 25vw;
+.w-20vw {
+  width: 20vw;
+}
+
+.w-70vw {
+  width: 70vw;
 }
 
 .max-w-100percent {
   max-width: 100%;
+}
+
+/* 🍂Border🍃 */
+.border {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  border: 3px solid #006442;
 }
 
 /* 🍂Border radius🍃 */
@@ -195,10 +222,6 @@ code {
 
 /* .br-5 {
   border-radius: 5px;
-} */
-
-/* .bgColor-snow {
-  background-color: snow;
 } */
 
 /* .position-relative {
