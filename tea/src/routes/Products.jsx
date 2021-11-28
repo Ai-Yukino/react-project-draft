@@ -37,7 +37,7 @@ function Product({ name, images, prices, path }) {
         <div className={"position-relative" + " h-250px" + " w-400px"}>
           <img
             className={"position-absolute" + " br-15px"}
-            src={topImage.url + "s.png"}
+            src={topImage.url + "-50percent.png"}
             alt={topImage.alt}
           />
           <img
@@ -49,7 +49,7 @@ function Product({ name, images, prices, path }) {
               " ease-in-out" +
               " hover-opacity-1"
             }
-            src={bottomImage.url + "s.png"}
+            src={bottomImage.url + "-50percent.png"}
             alt={bottomImage.alt}
           />
         </div>

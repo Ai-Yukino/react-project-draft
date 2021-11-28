@@ -37,7 +37,7 @@ function ProductImages({ images }) {
           return (
             <img
               className={" br-15px" + " border"}
-              src={image.url + "xs.png"}
+              src={image.url + "-20percent.png"}
             />
           );
         })}
