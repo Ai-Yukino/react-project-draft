@@ -17,29 +17,30 @@ code {
 /* Start custom CSS */
 
 /* 🍂Color🍃 */
+/* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
 
 .bg-color-eggshell-paper {
-  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
   background-color: #e2be9f;
 }
 
 .hover-color-young-bamboo:hover {
-  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
   color: #6b9362;
 }
 
 .bg-color-red-wisteria {
-  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
   background-color: #bb7796;
 }
 
 .bg-color-cypress-bark {
-  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
   background-color: #752e23;
 }
 
 .bgColor-snow {
   background-color: snow;
+}
+
+.bg-color-seashell {
+  background-color: seashell;
 }
 
 /* 🍂Flex🍃 */
