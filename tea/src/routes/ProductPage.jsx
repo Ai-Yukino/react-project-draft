@@ -3,14 +3,23 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 function ProductImages({ images }) {
-  // 🍂Image calculations🍃
+  // 🍂Featured image calculations🍃
   function FeaturedImage({ images }) {
     return (
-      <div className="flex-3 flex-shrink">
+      <div
+        className={
+          "flex" +
+          " column" +
+          " overflow-y-hidden" +
+          " max-h-500px" +
+          " max-w-100percent" +
+          " br-15px"
+        }
+      >
         {images.map((image) => {
           return (
             <img
-              className="squircle adaptive-width"
+              className={"br-15px" + " width-100percent"}
               src={image.url + ".png"}
               alt={image.alt}
             />
@@ -19,11 +28,27 @@ function ProductImages({ images }) {
       </div>
     );
   }
-  function ImageList({ images }) {}
+
+  // 🍂Image list calculations🍃
+  function ImageList({ images }) {
+    return (
+      <div className={"flex" + " column" + " space-around"}>
+        {images.map((image) => {
+          return (
+            <img
+              className={" br-15px" + " border"}
+              src={image.url + "-20percent.png"}
+            />
+          );
+        })}
+      </div>
+    );
+  }
 
   return (
-    <div className="squircle bgColor-snow">
+    <div className={"flex" + " space-evenly" + " w-70vw"}>
       <FeaturedImage images={images} />
+      <ImageList images={images} />
     </div>
   );
 }
@@ -115,7 +140,16 @@ function ProductInfo({
   }
 
   return (
-    <div className="bgColor-snow squircle test flex-4">
+    <div
+      className={
+        "flex" +
+        " column" +
+        " w-20vw" +
+        " br-15px" +
+        " pd-20px" +
+        " bg-color-eggshell-paper"
+      }
+    >
       <div>{name}</div>
       <div>{description}</div>
       <Categories categories={categories} />
@@ -163,7 +197,7 @@ export default function ProductPage() {
   }, []);
 
   return (
-    <div className="flex-2 visualize">
+    <div className={"flex" + " space-evenly" + " mt-125px"}>
       <ProductImages images={product.images} />
       <ProductInfo
         name={product.name}

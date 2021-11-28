@@ -17,6 +17,7 @@ vite (or npm run dev)
     - Test and choose small image size for image selection
     - Add looping for image selection
     - Add click-and-drag carousel for image selection
+    - Add media queries for responsive image sizes
 
 ## Next tasks
 
@@ -51,7 +52,9 @@ Look into [Cloudfare Images CDN](https://www.cloudflare.com/products/cloudflare-
 [👥 Cross fading images](http://css3.bradshawenterprises.com/cfimg/)  
 [👥 Cross fade images inside flexbox](https://stackoverflow.com/a/46891338)  
 [👥 CSS-only carousel (CSS tricks)](https://css-tricks.com/css-only-carousel/)  
-[👥 Adaptive image size with flexbox (SO)](https://stackoverflow.com/a/41775258)
+[👥 Adaptive image size with flexbox (SO)](https://stackoverflow.com/a/41775258)  
+[👥 Reimagining atomic CSS](https://antfu.me/posts/reimagine-atomic-css)  
+[👥 Irfanview](https://en.wikipedia.org/wiki/IrfanView)
 
 ## Requirements
 

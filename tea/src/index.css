@@ -1,3 +1,5 @@
+/* Vite default presets */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -12,124 +14,278 @@ code {
     monospace;
 }
 
-.visualize {
-  background-color: burlywood;
-  padding: 5px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  border-radius: 5px;
+/* Start custom CSS */
+
+/* 🍂Color🍃 */
+
+.bg-color-eggshell-paper {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  background-color: #e2be9f;
 }
 
-.flex {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+.hover-color-young-bamboo:hover {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  color: #6b9362;
+}
+
+.bg-color-red-wisteria {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  background-color: #bb7796;
+}
+
+.bg-color-cypress-bark {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  background-color: #752e23;
 }
 
 .bgColor-snow {
   background-color: snow;
 }
 
-.padding-vertical {
-  padding-top: 5px;
-  padding-bottom: 5px;
+/* 🍂Flex🍃 */
+
+.flex {
+  display: flex;
 }
 
-.flex-center {
-  display: flex;
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.column {
   flex-direction: column;
+}
+
+.center {
   align-items: center;
 }
 
-.squircle {
+/* 🍂Padding and margins🍃 */
+
+.pd-5px {
+  padding: 5px;
+}
+
+.pd-20px {
+  padding: 20px;
+}
+
+.pd-top-10px {
+  padding-top: 15px;
+}
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.mt-125px {
+  margin-top: 125px;
+}
+
+.mb-50px {
+  margin-bottom: 50px;
+}
+
+/* 🍂Height and width🍃 */
+
+.h-250px {
+  height: 250px;
+}
+
+.h-500px {
+  height: 500px;
+}
+
+.max-h-500px {
+  max-height: 500px;
+}
+
+.w-400px {
+  width: 400px;
+}
+
+.w-800px {
+  width: 800px;
+}
+
+.width-100percent {
+  width: 100%;
+}
+
+.w-20vw {
+  width: 20vw;
+}
+
+.w-70vw {
+  width: 70vw;
+}
+
+.max-w-100percent {
+  max-width: 100%;
+}
+
+/* 🍂Border🍃 */
+.border {
+  /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+  border: 3px solid #006442;
+}
+
+/* 🍂Border radius🍃 */
+
+.br-15px {
   border-radius: 15px;
 }
 
+/* 🍂Position🍃 */
+
 .position-absolute {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .position-relative {
   position: relative;
-  /* margin: 0 auto; */
 }
 
-.height-250px {
-  height: 250px;
-}
-
-.width-400px {
-  width: 400px;
-}
-
-.height-500px {
-  height: 500px;
-}
-
-.width-800px {
-  width: 800px;
-}
+/* 🍂Opacity🍃 */
 
 .opacity-0 {
   opacity: 0;
 }
 
-.transition-opacity {
-  transition: opacity 0.2s ease 0s;
-}
-
-.hover-opacity:hover {
+.hover-opacity-1:hover {
   opacity: 1;
 }
 
-.no-text-decoration {
+/* 🍂Transition🍃 */
+
+.transition-0-2s {
+  transition-duration: 0.2s;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+/* 🍂Text decoration🍃 */
+
+.text-decoration-none {
   text-decoration: none;
 }
 
-.hover-color-olive:hover {
-  color: olive;
+/* 🍂Overflow🍃 */
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
-.flex-2 {
-  display: flex;
-  justify-content: space-around;
-}
+/* Old CSS */
 
-.flex-3 {
+/* .flex-shrink {
+  flex-shrink: 3;
+} */
+
+/* .flex-shrink-2 {
+  flex-shrink: 4;
+} */
+
+/* .flex-center {
   display: flex;
   flex-direction: column;
-  /* max-height: 500px;
-  max-width: 800px; */
+  align-items: center;
+} */
+
+/* .flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+} */
+
+/* .visualize {
+  background-color: burlywood;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+} */
+
+/* .bgColor-burlywood {
+  background-color: burlywood;
+} */
+
+/* .br-5 {
+  border-radius: 5px;
+} */
+
+/* .position-relative {
+  position: relative;
+} */
+
+/* .squircle {
+  border-radius: 15px;
+} */
+
+/* .position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* .top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+} */
+
+/* .transition-opacity {
+  transition: opacity 0.2s ease 0s;
+} */
+
+/* .hover-opacity:hover {
+  opacity: 1;
+} */
+
+/* .no-text-decoration {
+  text-decoration: none;
+} */
+
+/* .padding-vertical {
+  padding-top: 5px;
+  padding-bottom: 5px;
+} */
+
+/* .flex-2 {
+  display: flex;
+  justify-content: space-around;
+} */
+
+/* .flex-3 {
+  display: flex;
+  flex-direction: column;
   max-height: 500px;
   max-width: 100%;
   overflow-y: hidden;
-  /* flex-shrink: 0; */
-}
+} */
 
-.flex-4 {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-shrink {
-  flex-shrink: 3;
-}
-
-.min-width {
-  min-width: 0;
-}
-
-.adaptive-width {
+/* .adaptive-width {
   width: 100%;
   height: auto;
-}
+} */
 
-.flex-shrink-2 {
-  flex-shrink: 4;
-}
-
-.test {
+/* .test {
   width: 25vw;
-}
+} */
+
+/* .flex-4 {
+  display: flex;
+  flex-direction: column;
+} */
