@@ -90,6 +90,10 @@ code {
   margin-top: 125px;
 }
 
+.mb-10px {
+  margin-bottom: 10px;
+}
+
 .mb-50px {
   margin-bottom: 50px;
 }
@@ -184,6 +188,24 @@ code {
 
 .overflow-y-hidden {
   overflow-y: hidden;
+}
+
+.overflow-y {
+  overflow-y: hidden;
+}
+
+/* 🍂Scroll🍃 */
+
+.smooth {
+  scroll-behavior: smooth;
+}
+
+.snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
 }
 
 /* Old CSS */

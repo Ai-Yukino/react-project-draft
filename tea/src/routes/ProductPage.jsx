@@ -1,11 +1,67 @@
-import { map } from "cheerio/lib/api/traversing";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+// function ProductImages({ images }) {
+//   // 🍂Featured image calculations🍃
+//   function FeaturedImage({ images }) {
+//     return (
+//       <div
+//         className={
+//           "flex" +
+//           " column" +
+//           " overflow-y-hidden" +
+//           " max-h-500px" +
+//           " max-w-100percent" +
+//           " br-15px" +
+//           " smooth"
+//         }
+//       >
+//         {images.map((image) => {
+//           return (
+//             <div className={"mb-10px"} id={image.hash}>
+//               <img
+//                 className={"br-15px" + " width-100percent"}
+//                 src={image.url + ".png"}
+//                 alt={image.alt}
+//               />
+//             </div>
+//           );
+//         })}
+//       </div>
+//     );
+//   }
+
+//   // 🍂Image list calculations🍃
+//   function ImageList({ images }) {
+//     return (
+//       <div className={"flex" + " column" + " space-around"}>
+//         {images.map((image) => {
+//           return (
+//             <a href={"#" + image.hash}>
+//               <img
+//                 className={" br-15px"}
+//                 src={image.url + "-20percent.png"}
+//                 alt={image.alt}
+//               />
+//             </a>
+//           );
+//         })}
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div className={"flex" + " space-evenly" + " w-70vw"}>
+//       <FeaturedImage images={images} />
+//       <ImageList images={images} />
+//     </div>
+//   );
+// }
+
 function ProductImages({ images }) {
-  // 🍂Featured image calculations🍃
-  function FeaturedImage({ images }) {
-    return (
+  return (
+    // 🍂Featured image calculations🍃
+    <div className={"flex" + " space-evenly" + " w-70vw"}>
       <div
         className={
           "flex" +
@@ -13,42 +69,37 @@ function ProductImages({ images }) {
           " overflow-y-hidden" +
           " max-h-500px" +
           " max-w-100percent" +
-          " br-15px"
+          " br-15px" +
+          " smooth"
         }
       >
         {images.map((image) => {
           return (
-            <img
-              className={"br-15px" + " width-100percent"}
-              src={image.url + ".png"}
-              alt={image.alt}
-            />
+            <div className={"mb-10px"} id={image.hash}>
+              <img
+                className={"br-15px" + " width-100percent"}
+                src={image.url + ".png"}
+                alt={image.alt}
+              />
+            </div>
           );
         })}
       </div>
-    );
-  }
 
-  // 🍂Image list calculations🍃
-  function ImageList({ images }) {
-    return (
+      {/* 🍂Image list calculations🍃 */}
       <div className={"flex" + " column" + " space-around"}>
         {images.map((image) => {
           return (
-            <img
-              className={" br-15px" + " border"}
-              src={image.url + "-20percent.png"}
-            />
+            <a href={"#" + image.hash}>
+              <img
+                className={" br-15px"}
+                src={image.url + "-20percent.png"}
+                alt={image.alt}
+              />
+            </a>
           );
         })}
       </div>
-    );
-  }
-
-  return (
-    <div className={"flex" + " space-evenly" + " w-70vw"}>
-      <FeaturedImage images={images} />
-      <ImageList images={images} />
     </div>
   );
 }
