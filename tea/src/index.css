@@ -35,12 +35,24 @@ code {
   background-color: #752e23;
 }
 
-.bgColor-snow {
+.bg-color-snow {
   background-color: snow;
 }
 
 .bg-color-seashell {
   background-color: seashell;
+}
+
+.bg-color-steamed-chestnut {
+  background-color: #d3b17d;
+}
+
+.bg-color-JP-light-yellow {
+  background-color: #f7bb7d;
+}
+
+.bg-color-half {
+  background-color: #8d608c;
 }
 
 /* 🍂Flex🍃 */
@@ -55,6 +67,10 @@ code {
 
 .space-around {
   justify-content: space-around;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .wrap {
@@ -81,6 +97,10 @@ code {
 
 .pd-top-10px {
   padding-top: 15px;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 .mt-50px {
@@ -121,6 +141,10 @@ code {
   width: 800px;
 }
 
+.w-100percent {
+  width: 100%;
+}
+
 .width-100percent {
   width: 100%;
 }
@@ -145,8 +169,28 @@ code {
 
 /* 🍂Border radius🍃 */
 
+.br-5px {
+  border-radius: 5px;
+}
+
 .br-15px {
   border-radius: 15px;
+}
+
+/* 🍂Cursor🍃 */
+
+.pointer {
+  cursor: pointer;
+}
+
+/* 🍂Font size🍃 */
+
+.font-size-20px {
+  font-size: 20px;
+}
+
+.font-size-23px {
+  font-size: 23px;
 }
 
 /* 🍂Position🍃 */
@@ -207,6 +251,12 @@ code {
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+/* 🍂User-select🍃 */
+
+.user-select-none {
+  user-select: none;
 }
 
 /* Old CSS */

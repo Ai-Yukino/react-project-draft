@@ -1,63 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
-// function ProductImages({ images }) {
-//   // 🍂Featured image calculations🍃
-//   function FeaturedImage({ images }) {
-//     return (
-//       <div
-//         className={
-//           "flex" +
-//           " column" +
-//           " overflow-y-hidden" +
-//           " max-h-500px" +
-//           " max-w-100percent" +
-//           " br-15px" +
-//           " smooth"
-//         }
-//       >
-//         {images.map((image) => {
-//           return (
-//             <div className={"mb-10px"} id={image.hash}>
-//               <img
-//                 className={"br-15px" + " width-100percent"}
-//                 src={image.url + ".png"}
-//                 alt={image.alt}
-//               />
-//             </div>
-//           );
-//         })}
-//       </div>
-//     );
-//   }
-
-//   // 🍂Image list calculations🍃
-//   function ImageList({ images }) {
-//     return (
-//       <div className={"flex" + " column" + " space-around"}>
-//         {images.map((image) => {
-//           return (
-//             <a href={"#" + image.hash}>
-//               <img
-//                 className={" br-15px"}
-//                 src={image.url + "-20percent.png"}
-//                 alt={image.alt}
-//               />
-//             </a>
-//           );
-//         })}
-//       </div>
-//     );
-//   }
-
-//   return (
-//     <div className={"flex" + " space-evenly" + " w-70vw"}>
-//       <FeaturedImage images={images} />
-//       <ImageList images={images} />
-//     </div>
-//   );
-// }
-
 function ProductImages({ images }) {
   const [selectedImage, setSelectedImage] = useState("image-1");
 
@@ -77,12 +20,11 @@ function ProductImages({ images }) {
       >
         {images.map((image) => {
           return (
-            <div className={"mb-10px"} id={image.hash}>
+            <div className={"mb-10px"} id={image.hash} key={image.hash}>
               <img
                 className={"br-15px" + " width-100percent"}
                 src={image.url + ".png"}
                 alt={image.alt}
-                key={image.hash}
               />
             </div>
           );
@@ -98,6 +40,7 @@ function ProductImages({ images }) {
               onClick={(e) => {
                 setSelectedImage(image.hash);
               }}
+              key={image.hash}
             >
               <img
                 className={
@@ -106,7 +49,6 @@ function ProductImages({ images }) {
                 }
                 src={image.url + "-20percent.png"}
                 alt={image.alt}
-                key={image.hash}
               />
             </a>
           );
@@ -124,8 +66,34 @@ function ProductInfo({
   options,
   prices,
   stock,
-  measurements = null,
+  measurements,
 }) {
+  // 🍂Price calculations🍃
+  let hasMultiplePrices = prices.length > 1;
+  const pricesArray = prices.map((object) => {
+    return object.price;
+  });
+  const minPrice = Math.min(...pricesArray);
+  const maxPrice = Math.max(...pricesArray);
+
+  if (minPrice === maxPrice) {
+    hasMultiplePrices = false;
+  }
+
+  // 🍂Options calculations🍃
+  // let hasMeasurements = measurements != null;
+  // const [selectedCapacity, setSelectedCapacity] = useState("");
+  // if (hasMeasurements) {
+  //   setSelectedCapacity(
+  //     measurements[0].volume.toString() + measurements[0].units
+  //   );
+  // }
+
+  // let selectedCapacity = -1;
+  // if (measurements.length > 0) {
+  //   selectedCapacity = measurements[0].volume;
+  // }
+
   // 🍂Categories calculations🍃
   function Categories({ categories }) {
     return (
@@ -141,6 +109,7 @@ function ProductInfo({
       </div>
     );
   }
+
   // 🍂Tags calculations🍃
   function Tags({ tags }) {
     return (
@@ -157,71 +126,6 @@ function ProductInfo({
     );
   }
 
-  // 🍂Options calculations🍃
-  function Options({ options }) {
-    return (
-      <div>
-        <strong>Options</strong>:{" "}
-        {options.map((option) => {
-          return <span key={option.option}>{option.option} </span>;
-        })}
-      </div>
-    );
-  }
-
-  // 🍂Prices calculations🍃
-  function Prices({ prices }) {
-    return (
-      <div>
-        <strong>Prices</strong>:{" "}
-        {prices.map((price) => {
-          return <span key={price.option}>${price.price.toFixed(2)} </span>;
-        })}
-      </div>
-    );
-  }
-
-  // 🍂Stock calculation🍃
-  function Stock({ stock }) {
-    if (
-      stock.find((option) => {
-        return option.stock <= 0;
-      })
-    ) {
-      return (
-        <div>
-          {stock.map((option) => {
-            return (
-              <>
-                {option.stock <= 0 && (
-                  <span key={option.option}>
-                    {option.option === "default"
-                      ? "Out of stock"
-                      : "Option " + option.option + ": out of stock"}
-                  </span>
-                )}
-              </>
-            );
-          })}
-        </div>
-      );
-    } else {
-      return <></>;
-    }
-  }
-
-  // 🍂Measurements calculation🍃
-  function Measurements({ measurements }) {
-    return (
-      <div>
-        <strong>Capacity</strong>:{" "}
-        {measurements.map((option) => {
-          return <span>{option.volume + option.units} </span>;
-        })}
-      </div>
-    );
-  }
-
   return (
     <div
       className={
@@ -231,17 +135,23 @@ function ProductInfo({
         " br-15px" +
         " pd-20px" +
         " bg-color-seashell" +
-        " space-around"
+        " space-between"
       }
     >
-      <h1>{name}</h1>
+      <div>
+        <h1 className={" mt-0"}>{name}</h1>
+        <div className={" font-size-23px"}>
+          $
+          {!hasMultiplePrices
+            ? minPrice.toFixed(2)
+            : minPrice.toFixed(2) + " - $" + maxPrice.toFixed(2)}
+        </div>
+      </div>
       <div>{description}</div>
-      {options.length > 1 && <Options options={options} />}
-      <Prices prices={prices} />
-      <Stock stock={stock} />
-      <Categories categories={categories} />
-      <Tags tags={tags} />
-      {measurements && <Measurements measurements={measurements} />}
+      <div>
+        <Categories categories={categories} />
+        <Tags tags={tags} />
+      </div>
     </div>
   );
 }
@@ -294,3 +204,106 @@ export default function ProductPage() {
     </div>
   );
 }
+
+// 🍂Old code🍃
+// ProductInfo body
+// 🍂Options and prices calculations🍃
+// function OptionsPrices({ options, prices }) {
+//   const [selectedOption, setSelectedOption] = useState(options[0].option);
+//   if (selectedOption != "default") {
+//     return (
+//       <div className={"flex" + " space-evenly"}>
+//         {options.map((option) => {
+//           return (
+//             <div
+//               className={
+//                 "bg-color-steamed-chestnut" +
+//                 " br" +
+//                 (option.option === selectedOption
+//                   ? " border-green-bamboo"
+//                   : "") +
+//                 " font-size-20px" +
+//                 " pd-5px" +
+//                 " pointer" +
+//                 " user-select-none"
+//               }
+//               key={option.option}
+//               onClick={() => {
+//                 setSelectedOption(option.option);
+//               }}
+//             >
+//               {option.option}
+//             </div>
+//           );
+//         })}
+//       </div>
+//     );
+//   } else {
+//     return <div>Price: {prices[0].price}</div>;
+//   }
+// }
+
+// 🍂Prices calculations🍃
+// function Prices({ prices }) {
+//   return (
+//     <div>
+//       <strong>Prices</strong>:{" "}
+//       {prices.map((price) => {
+//         return <span key={price.option}>${price.price.toFixed(2)} </span>;
+//       })}
+//     </div>
+//   );
+// }
+
+// 🍂Stock calculation🍃
+// function Stock({ stock }) {
+//   if (
+//     stock.find((option) => {
+//       return option.stock <= 0;
+//     })
+//   ) {
+//     return (
+//       <div>
+//         {stock.map((option) => {
+//           return (
+//             <>
+//               {option.stock <= 0 && (
+//                 <span key={option.option}>
+//                   {option.option === "default"
+//                     ? "Out of stock"
+//                     : "Option " + option.option + ": out of stock"}
+//                 </span>
+//               )}
+//             </>
+//           );
+//         })}
+//       </div>
+//     );
+//   } else {
+//     return <></>;
+//   }
+// }
+
+// 🍂Measurements calculation🍃
+// function Measurements({ measurements }) {
+//   return (
+//     <div>
+//       <strong>Capacity</strong>:{" "}
+//       {measurements.map((option) => {
+//         return <span>{option.volume + option.units} </span>;
+//       })}
+//     </div>
+//   );
+// }
+
+// return()
+
+// {measurements && <Measurements measurements={measurements} />}
+
+// {options.length > 1 && (
+//   <OptionsPrices options={options} prices={prices} />
+//   )}
+
+// {/* <Prices prices={prices} />
+//       <Stock stock={stock} /> */}
+// {/* <OptionsPrices options={options} prices={prices} /> */}
