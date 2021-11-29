@@ -31,7 +31,6 @@ function Product({ name, images, prices, path }) {
         to={path}
         onClick={() => {
           document.title = "A small tea shop | " + name;
-          console.log(document.links);
         }}
       >
         <div className={"position-relative" + " h-250px" + " w-400px"}>

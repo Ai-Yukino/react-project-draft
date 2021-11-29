@@ -13,10 +13,15 @@ vite (or npm run dev)
 `ProductPage.jsx`
 
 - Make individual product pages
-  - Add return `Link` to `Products.jsx`
   - Make `ProductInfo()` look nicer and functional
+    - Component: things which depend on options
+  - Add return `Link` to `Products.jsx`
 
 ## Next tasks
+
+Shopping cart
+
+Web responsiveness
 
 Nicer `Products.jsx`
 
